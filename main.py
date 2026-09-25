@@ -1,16 +1,6 @@
 from functions import add_student, update_student, delete_student, display_all_students, search_student
-
-
-def validate_grade():
-    while True:
-        try:
-            grade = int(input("Enter student grade = "))
-            return grade
-        except ValueError:
-            print("Grade must be a number! Try again.")
-
-
-student_grade = {}
+from validation import validate_grade
+from data import student_grade
 
 
 def main():
